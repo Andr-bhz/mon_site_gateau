@@ -32,7 +32,7 @@ et de Fermeture veuillez consulter sur la barre suivante <br>
          <?php echo $i ?> 
 </select>  
         <?php endfor?>
-<form action="" method="POST">
+<form action="" method="POST" class="group-Form">
     <div>
         <label for="">Nom:</label>
         <input type="text" name="name" id="name" placeholder="Entrer votre nom">
@@ -41,4 +41,5 @@ et de Fermeture veuillez consulter sur la barre suivante <br>
             <label for="">Email:</label>
             <input type="text" name="email" id="email" placeholder="Entrer votre email">
     </div>
+        <button type="submit">Envoyer</button>
 </form>
