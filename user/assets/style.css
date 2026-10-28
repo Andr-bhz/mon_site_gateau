@@ -35,3 +35,7 @@ p {
     color:rgb(143, 148, 163);
     font-size:50px;
 }
+img {
+    border-radius: 10px;
+    
+}

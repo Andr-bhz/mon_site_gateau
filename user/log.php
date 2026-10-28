@@ -34,7 +34,11 @@ et de Fermeture veuillez consulter sur la barre suivante <br>
         <?php endfor?>
 <form action="" method="POST">
     <div>
-    <label for="">Nom:</label>
-    <input type="text" name="name" id="name" placeholder="Entrer votre nom">
+        <label for="">Nom:</label>
+        <input type="text" name="name" id="name" placeholder="Entrer votre nom">
+    </div>
+    <div>
+            <label for="">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Entrer votre email">
     </div>
 </form>
