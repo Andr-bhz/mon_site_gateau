@@ -1,3 +1,11 @@
+<?php 
+$contact = null;
+$vrai_contact='mon numero de telephone';
+
+if($contact == $vrai_contact){
+    echo "mon vrai numero est " . $vrai_contact;
+}
+?>
 <Footer>
     <p>
     pour plus d'informations veuillez nous retrouver sur les adresses suivantes <br>
@@ -6,4 +14,3 @@
     <a href="https://github.com/andr-bhz">mon profil github</a>
     </p>
 </Footer>
-<?php require './user/index.php';?>

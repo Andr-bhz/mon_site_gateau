@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 body {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.979);
+    color: rgba(241, 238, 238, 0.815);
+
 }
 a {
     display: flex;
@@ -17,12 +19,12 @@ a {
 }
 header {
     position: fixed;
-    display: flex;
-    background-color: darkblue;
+    display: grid;
+    gap: 30px;
+    margin-left:auto ;
+    background-color: rgba(5, 5, 8, 0.473);
     align-items: center;
     justify-content: center;
-    line-height: 50px;
-
 }
 a:hover {
     transition: 0.5s;
@@ -30,8 +32,10 @@ a:hover {
     zoom: 5px;
 }
 p {
-     
-    line-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 90px;
     color:rgb(143, 148, 163);
     font-size:50px;
 }
@@ -41,19 +45,22 @@ img {
     border-radius: 100px;
 
 }
-form{
-    border-color: yellow;
+.group-Form{
     display: grid;
+    gap: 10px;
     align-items: center;
     justify-content: center;
-    background-color: rgb(7, 4, 4);
+    background-color:rgb(143, 88, 97);
+    margin: 100px;
+
+    /* padding: 10px; */
     color:black;
     font-size: 20px;
 }
 input:focus{
     transition: 0.7s;
     transform: translate(3px);
-    background-color: black;
+    background-color:rgba(5, 4, 5, 0.897);
     box-shadow: 2px 3px 3px 3px; 
 }
 button:hover{
@@ -61,9 +68,16 @@ button:hover{
     box-shadow:2px 3px 3px 3px ;
 }
 button{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+
 }
 Footer{
     margin-bottom: 400px;
-    background-color: chocolate;
+    background-color: rgba(145, 132, 122, 0.76);
+}
+input{
+    margin-left: 40px;
+    padding-left: 60px;
+    height: 15px;
+    color:white;
 }
