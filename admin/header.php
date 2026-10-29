@@ -11,4 +11,4 @@ $error = 403;
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php aFFicher(null,'mon site',403);?></title>
-<?php include 'index.php'; ?>
+<?php require 'index.php'; ?>

@@ -41,12 +41,12 @@ img {
     border-radius: 100px;
 
 }
-.group-Form {
-    border:30px;
+form{
+    border-color: yellow;
     display: grid;
     align-items: center;
     justify-content: center;
-    background-color: rgb(216, 163, 163);
+    background-color: rgb(7, 4, 4);
     color:black;
     font-size: 20px;
 }
