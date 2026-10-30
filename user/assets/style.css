@@ -52,7 +52,7 @@ img {
     justify-content: center;
     background-color:rgb(143, 88, 97);
     margin: 150px;
-    border: solid;
+    border-radius: 30px;
     padding:20px;
     color:black;
     font-size: 25px;
@@ -81,9 +81,12 @@ Footer{
 }
 input{
     margin-left: 40px;
-    padding-left: 60px;
+    padding-left: 80px;
     height: 15px;
     color:white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
 }
 h1{
     display: flex;
@@ -98,4 +101,8 @@ span{
 .group-Form:hover{
     box-shadow: 5px 5px 5px 5px(white);
     transition: 0.8s;
+}
+input:hover{
+    transition: 0.5s;
+    border-color: rgba(31, 31, 4, 0.856);
 }
