@@ -1,7 +1,8 @@
-<?php 
-    $i = null;
-    $age = date('Y');
+<?php
 
+    $i = null;
+    // $age = date('Y');
+   
     // if(empty($_POST['nom'] && $_POST['email'])):
         //    echo "welcome";
 
@@ -54,23 +55,12 @@ et de Fermeture veuillez consulter sur la barre suivante <br>
     </option>
       <?php endfor?>
 </select> 
-      Entrer votre date de naissance
-<button type="submit">valider l'age</button>
+      <p id="naissance"></p>
+<button type="button"onclick =' document.getElementById("naissance").innerHTML = "Entrer votre annee de naissance"'>click</button>
  
-<script src="./user/assets/script.js">
-    // let x =30;
-    // let y =45;
-    // let equa= ax^2+b
-    //     if(equa <> 0){
-    //         if(x=0){
-    //             alert(equa);
-    //         }
-    //         if(y=0){
-    //             alert(equa);
-    //         }
-    //     }
-    //     else{
-    //          alert('equation impossible');
-    //     }
+<script scr="./mon_site/user/assets/script.js">
+if('button type="button"onclick =' document.getElementById("naissance").innerHTML = "Entrer votre annee de naissance"' == 1 )){
+        window.alert('binevenue')
+        }
 </script>
 <!-- <?php require './admin/footer.php'; ?> -->
