@@ -56,11 +56,11 @@ et de Fermeture veuillez consulter sur la barre suivante <br>
       <?php endfor?>
 </select> 
       <p id="naissance"></p>
-<button type="button"onclick =' document.getElementById("naissance").innerHTML = "Entrer votre annee de naissance"'>click</button>
+<button type="button"onclick =' document.getElementById("naissance").innerHTML = "Entrer votre annee de naissance"'
+oFFclick >click</button>
  
 <script scr="./mon_site/user/assets/script.js">
-if('button type="button"onclick =' document.getElementById("naissance").innerHTML = "Entrer votre annee de naissance"' == 1 )){
-        window.alert('binevenue')
-        }
+    window.alert('bienvenue')
+        
 </script>
 <!-- <?php require './admin/footer.php'; ?> -->
