@@ -59,8 +59,6 @@ et de Fermeture veuillez consulter sur la barre suivante <br>
 <button type="button"onclick =' document.getElementById("naissance").innerHTML = "Entrer votre annee de naissance"'
 oFFclick >click</button>
  
-<script scr="./mon_site/user/assets/script.js">
-    window.alert('bienvenue')
-        
+<script scr="./mon_site/user/assets/script.js">        
 </script>
 <!-- <?php require './admin/footer.php'; ?> -->
