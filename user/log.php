@@ -19,7 +19,7 @@ $nom =strtoupper('name');
     <title>
         <?= $title?>
     </title>
-    <link rel="stylesheet" href="./assets/style.css">    
+    <link rel="stylesheet" href="./style.css">    
 </head>
 <header>
     <a href="#Accueil">Accueil</a>
@@ -37,12 +37,13 @@ et de Fermeture veuillez consulter sur la barre suivante <br>
 <form action="user.php " method="POST" class="group-Form" id="Formulaire" >
     <div>
         <label for="">Nom:</label>
-        <input type="text" name="name" id="name" placeholder="Entrer votre nom">
+        <input type="text" name="name" id="name" placeholder="Entrer votre nom" required>
     </div>
     <div>
             <label for="">Email:</label>
-            <input type="text" name="email" id="email" placeholder="Entrer votre email">
+            <input type="text" name="email" id="email" placeholder="Entrer votre email" required>
     </div>
+        <input type="checkbox" name="box" id="box" required class="box">
         <button type="submit">Envoyer</button>
 </form>
 <select name="ouvert" id="ouvert">
@@ -59,6 +60,6 @@ et de Fermeture veuillez consulter sur la barre suivante <br>
 <button type="button"onclick =' document.getElementById("naissance").innerHTML = "Entrer votre annee de naissance"'
 oFFclick >click</button>
  
-<script scr="./mon_site/user/assets/script.js">        
+<script scr="./assets/script.js">        
 </script>
 <!-- <?php require './admin/footer.php'; ?> -->

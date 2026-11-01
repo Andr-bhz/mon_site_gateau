@@ -15,4 +15,3 @@
 // function myFunction(){
 //  document.getElementById("naissance").innerHTML = "Entrer votre annee de naissance";
 // }
-// window.alert('bienvenue')

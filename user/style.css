@@ -27,7 +27,7 @@ header {
 }
 a:hover {
     transition: 0.5s;
-    color: rgba(13, 17, 13, 0.925);
+    color: rgba(121, 29, 17, 0.925);
     zoom: 5px;
 }
 p {
@@ -47,15 +47,16 @@ img {
 .group-Form{
     display: flex;
     flex-direction: column;
-    gap: 5px;
     align-items: center;
     justify-content: center;
-    background-color:rgb(143, 88, 97);
-    margin: 150px;
+    background-color:rgb(158, 104, 113);
+    margin: 190px;
     border-radius: 30px;
-    padding:20px;
-    color:black;
+    padding:60px;
+    color:rgb(5, 4, 4);
     font-size: 25px;
+    height: 300px;
+    width: 400px;
 }
 input:focus{
     transition: 0.7s;
@@ -105,4 +106,15 @@ span{
 input:hover{
     transition: 0.5s;
     border-color: rgba(31, 31, 4, 0.856);
+}
+.box{
+
+    display: list-item;
+    justify-content: Flex-start;
+    align-items: Flex-start;
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(143, 88, 97);
+    border-radius: 5px;
 }
