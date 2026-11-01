@@ -1,0 +1,68 @@
+ETAPE 1 :IDENTIFICATION[
+    DEBUT
+    AFFICHER "veuillez entrer votre nom:"
+    LIRE nom
+    AFFICHER "veuiller entrer votre email :"
+    LIRE email
+
+    Si nom est vide ou email est vide ALORS
+        AFFICHER "erreur : Tous les champs sont obligatoires."
+        RETOURNER a l'etape 1
+    FIN SI
+
+    //Enregistremnt de la session 
+    CREER une nouvelle ligne dans 'sessions' avec (nom,email,statut ='actiF')
+    STOCKER L'ID de cette session dans les cookies du navigateur de l'utilisateur (session_ID)
+
+    REDIRIGER vers "la page principale.html "
+FIN
+]
+
+ETAPE 2: VERIFICATION SUR LA PAGE D'ACCUEIL[
+DEBUT
+    LIRE session_ID depuis les cookies du navigateur 
+
+    SI session_ID n'existe pas Alors
+        REDIRIGER vers le Formulaire de l'identiication 
+    FIN Si
+        
+        //veriFication du statut dans la base de donnees 
+        RECHERCHER la session avec session_ID dans la table 'session'
+
+        SI session.statuts == 'deconnecte' OU session non trouvee ALORS
+            EFFACER session_ID des cookies
+            AFFICHER vers "vous avez ete deconnecter par l'adimnistrateur ."
+            REDIRIGER vers le Formualaire d'identiication
+        SINON
+            AFFICHER la page normalement
+        FIN SI
+FIN
+]
+
+ *COTE ADMIN:Visualisation*[
+DEBUT
+    AFFICHER "---LISTE DES UTILISATEUR EN LIGNE ---"
+    
+    //Recuperation des sessions actives 
+    LIRE toutes les lignes de la table 'session' ou statuts == 'acti'
+
+    POUR CHAQUE session TROUVEE:
+        AFFICHER "Nom : " + session.nom + " I Email :"
+        AFFICHER [Boutton "deconnecter" lie a sa session.id]
+    FIN POUR 
+FIN
+ ]
+
+
+ ACTION DE DECONNECTION PAR L'ADMIN[
+    DEBUT (Lors du clic sur le boutton "deconnecter"pour un ID speciique )
+    LIRE L'ID de la session selectionner (ID_a_bannir)
+
+    //mise a jour dans la base de donnees 
+    METTRE A JOUR la table 'sessions' 
+    PASSER statut = 'deconnecter'
+    ou id == ID_a_bannir
+
+    AFFICHER "l'utilisateur a ete deconnecter avec avec succes ."
+    RAFRAICHIR la liste des utilisateurs en ligne
+ ]
