@@ -1,5 +1,5 @@
 <?php
-    json_encode($_POST['email']);
+    // json_encode($_POST['email']);
     $i = null;
     // $age = date('Y');
    
@@ -60,6 +60,9 @@ et de Fermeture veuillez consulter sur la barre suivante <br>
 <button type="button"onclick =' document.getElementById("naissance").innerHTML = "Entrer votre annee de naissance"'
 oFFclick >click</button>
  
-<script scr="./assets/script.js">        
+<script src="./assets/script.js">  
+    if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Good day!";
+}  
 </script>
 <!-- <?php require './admin/footer.php'; ?> -->

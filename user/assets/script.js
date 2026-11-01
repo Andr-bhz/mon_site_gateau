@@ -15,3 +15,6 @@
 // function myFunction(){
 //  document.getElementById("naissance").innerHTML = "Entrer votre annee de naissance";
 // }
+//     if (new Date().getHours() < 18) {
+//   document.getElementById("demo").innerHTML = "Good day!";
+// }  
