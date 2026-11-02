@@ -1,10 +1,10 @@
 <?php
     // json_encode($_POST['email']);
     $i = null;
-    // $age = date('Y');
+    @$age = date('Y');
    
-    // if(empty($_POST['nom'] && $_POST['email'])):
-        //    echo "welcome";
+if(empty(@$_POST['nom'] && @$_POST['email'])):
+           echo "welcome";
 
 
 //  require './admin/header.php';
@@ -71,3 +71,4 @@ const btn=document.getElementById('btn')
     })
 </script>
 <!-- <?php require './admin/footer.php'; ?> -->
+<?php endif;?>
