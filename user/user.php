@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/page.css">
+    <link rel="stylesheet" href="page.css">
 </head>
 <header><h1>Bienvenue sur mon site pour se reabonnement en ligne</h1></header>
 
@@ -26,22 +26,33 @@
     </div>
 </section>
     <button class="" ="button"onclick =' document.getElementById("readme").innerHTML = "merci"'>Valider</button>
+    <button class="ntb">Changer de mode</button>
     <script src="">
         // let text1='Bienvenue sur mon site';
         // text1+= 'pour se reabonnement en ligne'
         // alert(text1);
         // console.log('bienvenue');
         // alert('bienvenue');
-const time = new Date().getHours();
-let greeting;
-if (time < 10) {
-  greeting = "Good morning";
-} else if (time < 20) {
-  greeting = "Good day";
-} else {
-  greeting = "Good evening";
-}
-document.getElementById("demo").innerHTML = greeting;
+// const time = new Date().getHours();
+// let greeting;
+// if (time < 10) {
+//   greeting = "Good morning";
+// } else if (time < 20) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good evening";
+// }
+// document.getElementById("demo").innerHTML = greeting;
+// const button = {
+//     theme: 'dark',
+//     text: 'Click me',
+// }
+// math.random() //nombre aleatoire de 0 a 1
+    const btn=document.getElementById('ntb')
+    ntb.addEventListener('click' => {
+        document.body.classList.toggle('dark-mode');
+    })
+    
     </script>
 </body>
 </html>

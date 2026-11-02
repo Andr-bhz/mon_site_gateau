@@ -18,3 +18,7 @@
 //     if (new Date().getHours() < 18) {
 //   document.getElementById("demo").innerHTML = "Good day!";
 // }  
+// const btn=document.getElementById('btn')
+//     btn.addEventListener('click', () => {
+//         document.body.toggle('dark-mode');
+//     })

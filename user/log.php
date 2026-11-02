@@ -19,7 +19,7 @@ $nom =strtoupper('name');
     <title>
         <?= $title?>
     </title>
-    <link rel="stylesheet" href="./style.css">    
+    <link rel="stylesheet" href="./assets/style.css">    
 </head>
 <header>
     <a href="#Accueil">Accueil</a>
@@ -59,10 +59,15 @@ et de Fermeture veuillez consulter sur la barre suivante <br>
       <p id="naissance"></p>
 <button type="button"onclick =' document.getElementById("naissance").innerHTML = "Entrer votre annee de naissance"'
 oFFclick >click</button>
+<button id="btn">changer de mode</button>
  
-<script src="./assets/script.js">  
-    if (new Date().getHours() < 18) {
-  document.getElementById("demo").innerHTML = "Good day!";
-}  
+<script>  
+//     if (new Date().getHours() < 18) {
+//   document.getElementById("demo").innerHTML = "Good day!";
+// }  
+const btn=document.getElementById('btn')
+    btn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    })
 </script>
 <!-- <?php require './admin/footer.php'; ?> -->

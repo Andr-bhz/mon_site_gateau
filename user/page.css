@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 body{
+    transition:  0.9s ease, color 0.9s ease;
     justify-content: center;
     align-items: center;
     color:rgba(201, 198, 198, 0.705);
     font-size:larger;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(0, 0, 0);
+}
+body.dark-mode{
+    background-color: rgba(243, 239, 239, 0.979);
+    color: rgba(0, 0, 0, 0.993);
 }
 div{
     background-color: rgba(8, 30, 32, 0.986);
