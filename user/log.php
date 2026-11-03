@@ -1,5 +1,5 @@
 <?php
-    // json_encode($_POST['email']);
+    json_encode($_POST['email']);
     $i = null;
     @$age = date('Y');
    

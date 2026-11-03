@@ -13,7 +13,7 @@
     <a href="https://"></a>
     <div class="hero">
         <h2>Abonnement 1 mois</h2>
-<section class="mind">
+<section class="mind" id="mind">
         <p>price: <span>5$</span><br>En s'abbonant sur notre site <br>proitez de <span>15%</span>  de reduction</p>
     </div>
     <div class="sheld">
@@ -52,6 +52,8 @@
     ntb.addEventListener('click' => {
         document.body.classList.toggle('dark-mode');
     })
+    const btn=document.getElementById('ntb')
+    btn.addEventListener('click', () => {
     
     </script>
 </body>

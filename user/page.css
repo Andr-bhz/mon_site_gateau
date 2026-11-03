@@ -100,3 +100,7 @@ h1{
     justify-content: center;
     font-size: 20px;
 }
+.mind.dark-mode{
+    background-color: rgba(27, 43, 16, 0.979);
+    color: rgba(0, 0, 0, 0.993);
+}
