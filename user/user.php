@@ -49,12 +49,9 @@
 // }
 // math.random() //nombre aleatoire de 0 a 1
     const btn=document.getElementById('ntb')
-    ntb.addEventListener('click' => {
+    ntb.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
     })
-    const btn=document.getElementById('ntb')
-    btn.addEventListener('click', () => {
-    
     </script>
 </body>
 </html>
