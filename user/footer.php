@@ -1,7 +1,7 @@
 
 
 <Footer>
-    <p>
+    <p >
     pour plus d'informations veuillez nous retrouver sur les adresses suivantes <br>
     &copy pour nous contacter
     <a style="text-decoration:none; color:white;" id ="telephone" href="appel.telephone">+243 84 04 24 703</a>
