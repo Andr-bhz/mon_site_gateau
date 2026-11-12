@@ -12,6 +12,18 @@
 
 <body>
     <a href="https://"></a>
+    <table>
+        <thead>
+            <tr>
+            <th>Abonnement</th>
+            <th>Email</th>
+            <th>Nom</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
     <div class="hero">
         <h2>Abonnement 1 mois</h2>
 <section class="mind" id="mind">
@@ -25,6 +37,7 @@
         <h2 class="readme">Abonnement 6 mois</h2>
         <p>price: <span>40$</span><br>En s'abbonant sur notre site <br>proitez de <span> 20%</span> de reduction</p>
     </div>
+     
 </section>
 <p>
     alors mon site se presetente comme suite veuillez inserer toutes vos donnez  
@@ -57,6 +70,8 @@
         document.body.classList.toggle('dark-mode');
     })
     </script>
+   
+    </body>
 <Footer style= "background-color:rgb(66, 31, 16);
                 margin-top:200px;
                 padding:50px;
