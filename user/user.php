@@ -9,6 +9,7 @@
 </head>
 <header><h1>Bienvenue sur mon site pour se reabonnement en ligne</h1></header>
 
+
 <body>
     <a href="https://"></a>
     <div class="hero">
@@ -53,5 +54,9 @@
         document.body.classList.toggle('dark-mode');
     })
     </script>
-</body>
-</html>
+<Footer>
+    <?php 
+
+require './footer.php';
+?>
+</Footer>

@@ -1,5 +1,5 @@
 <?php 
-// require dirname(__DIR__) . DIRECTORY_SEPARATOR . './admin/Footer.php';
+// require '/admin/Footer/footer.php';
 // require './mon_site/admin/footer.php';
 require 'log.php';
 

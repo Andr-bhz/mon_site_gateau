@@ -23,5 +23,12 @@ aFFicher(null,"mon site",403);
 // }
 // age(18,$_POST['ouvert']);
 
+   
+function appel($i,$age){   
+        if(empty(@$_POST['nom'] && @$_POST['email'])){
+
+        }
+}
+appel(null,26);
 
 ?>

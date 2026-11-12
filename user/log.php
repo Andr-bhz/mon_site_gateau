@@ -1,14 +1,10 @@
 <?php
-    json_encode($_POST['email']);
+    // json_encode($_POST['email']);
     $i = null;
-    @$age = date('Y');
-   
-if(empty(@$_POST['nom'] && @$_POST['email'])):
-           echo "welcome";
-
-
-//  require './admin/header.php';
-$nom =strtoupper('name');
+    $age = date('Y');
+    // $detail=trim($_POST['name'] && $_POST['email']);
+    //         echo $detail;
+    $nom =strtoupper('name');
 ?>
 
 <!DOCTYPE html>
@@ -19,14 +15,17 @@ $nom =strtoupper('name');
     <title>
         <?= $title?>
     </title>
-    <link rel="stylesheet" href="./assets/style.css">    
+    <link rel="stylesheet" href="./style.css">    
 </head>
+<button id="btn" class="btn">changer de mode</button>
 <header>
-    <a href="#Accueil">Accueil</a>
-    <a href="#Historique">Historique</a>
-    <a href="#Formulaire">Contact</a>
+    <a id="accueil" href="#Accueil">Accueil</a>
+    <a id="historique" href="#Historique">Historique</a>
+    <a id ="contact" href="#Formulaire">Contact</a>
+    <a id="mode" href="#btn">Change Mode</a>
 </header>
 <body>
+    
         <strong><h1 id="Accueil" >Welcome in my web<span>Site</span> </h1></strong>
     <img src="./images/gateau.jpg" alt="" height=800 width =900>
     <p>Bienvenue sur mon site qui nous informe sur differents 
@@ -34,6 +33,7 @@ types de parfum que vous aimez <br id="Historique"> plus d'informations veuillez
 <br>pour tout savoir sur notre programme d'ouverture
 et de Fermeture veuillez consulter sur la barre suivante <br>
 </p>
+
 <form action="user.php " method="POST" class="group-Form" id="Formulaire" >
     <div>
         <label for="">Nom:</label>
@@ -56,11 +56,7 @@ et de Fermeture veuillez consulter sur la barre suivante <br>
     </option>
       <?php endfor?>
 </select> 
-      <p id="naissance"></p>
-<button type="button"onclick =' document.getElementById("naissance").innerHTML = "Entrer votre annee de naissance"'
-oFFclick >click</button>
-<button id="btn">changer de mode</button>
- 
+
 <script>  
 //     if (new Date().getHours() < 18) {
 //   document.getElementById("demo").innerHTML = "Good day!";
@@ -70,5 +66,8 @@ const btn=document.getElementById('btn')
         document.body.classList.toggle('dark-mode');
     })
 </script>
+
+<Footer>
+   <?php require 'footer.php' ; ?>
+</Footer>
 <!-- <?php require './admin/footer.php'; ?> -->
-<?php endif;?>
