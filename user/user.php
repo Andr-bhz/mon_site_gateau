@@ -1,4 +1,9 @@
+<!-- <?php
 
+$nom = htmlspecialchars($user['nom']);
+$email =htmlspecialchars($user['email']);
+$nom_ville = htmlspecialchars($user['ville']);
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,22 +13,26 @@
     <link rel="stylesheet" href="./page.css">
 </head>
 <header><h1>Bienvenue sur mon site pour se reabonnement en ligne</h1></header>
-
-
 <body>
     <a href="https://"></a>
-    <table>
+   <!-- <table>
         <thead>
             <tr>
-            <th>Abonnement</th>
-            <th>Email</th>
-            <th>Nom</th>
+                <th>Nom</th>
+                <th>Email</th>
+                <th>Ville</th>
             </tr>
         </thead>
         <tbody>
-            
+            <?php foreach ($utilisateurs as $user): ?>
+                <tr>
+                    <td><?php echo $nomm ?></td>
+                    <td><?php echo $email ?></td>
+                    <td><?php echo $nom_ville ?></td>
+                </tr>
+            <?php endforeach; ?>
         </tbody>
-    </table>
+    </table> -->
     <div class="hero">
         <h2>Abonnement 1 mois</h2>
 <section class="mind" id="mind">
