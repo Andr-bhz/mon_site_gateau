@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="page.css">
+    <title>user_pour_vos_reabonnement_en_ligene</title>
+    <link rel="stylesheet" href="./assets/page.css">
 </head>
 <header><h1>Bienvenue sur mon site pour se reabonnement en ligne</h1></header>
 
@@ -26,8 +26,11 @@
         <p>price: <span>40$</span><br>En s'abbonant sur notre site <br>proitez de <span> 20%</span> de reduction</p>
     </div>
 </section>
+<p>
+    alors mon site se presetente comme suite veuillez inserer toutes vos donnez  
+</p>
     <button class="" ="button"onclick =' document.getElementById("readme").innerHTML = "merci"'>Valider</button>
-    <button class="ntb">Changer de mode</button>
+    <button id="note" class="ntb">Changer de mode</button>
     <script src="">
         // let text1='Bienvenue sur mon site';
         // text1+= 'pour se reabonnement en ligne'
@@ -49,12 +52,17 @@
 //     text: 'Click me',
 // }
 // math.random() //nombre aleatoire de 0 a 1
-    const btn=document.getElementById('ntb')
-    ntb.addEventListener('click', () => {
+    const btn=document.getElementById('note')
+    note.addEventListener('click',  () => {
         document.body.classList.toggle('dark-mode');
     })
     </script>
-<Footer>
+<Footer style= "background-color:rgb(66, 31, 16);
+                margin-top:200px;
+                padding:50px;
+                color:black;
+
+                " >
     <?php 
 
 require './footer.php';

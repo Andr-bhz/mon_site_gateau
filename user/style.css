@@ -47,26 +47,26 @@ body.dark-mode{
 header {
     position:fixed;
     display: grid;
-    gap: 70px;
+    gap: 90px;
     padding-bottom:30px;
     background-color: rgba(56, 56, 99, 0.473);
     align-items: normal;
     justify-content: center;
 }
 #accueil:hover {
-     text-decoration: underline rgb(0, 153, 255) ;
+     text-decoration: underline rgb(6, 7, 7) ;
     transition: 0.5s;
     color: rgba(121, 29, 17, 0.925);
     zoom: 5px;
 }
 #historique:hover{
-     text-decoration: underline rgb(0, 153, 255) ;
+     text-decoration: underline rgb(11, 12, 12) ;
     transition: 0.5s;
     color: rgba(121, 29, 17, 0.925);
     zoom: 5px;
 }
 #contact:hover{
-    text-decoration: underline rgb(0, 153, 255) ;
+    text-decoration: underline rgb(15, 15, 15) ;
     transition: 0.5s;
     color: rgba(121, 29, 17, 0.925);
     zoom: 5px;
@@ -223,7 +223,7 @@ input:hover{
 }
 #mode:hover{
     color:red;
-    text-decoration: underline rgb(0, 153, 255) ;
+    text-decoration: underline rgb(8, 10, 10) ;
     transition: 0.7s;
     
 }

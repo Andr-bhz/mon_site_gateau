@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    transition:  0.9s ease, color 0.9s ease;
+    transition:  0.8s ease, color 0.8s ease;
     justify-content: center;
     align-items: center;
     color:rgba(201, 198, 198, 0.705);
@@ -103,4 +103,15 @@ h1{
 .mind.dark-mode{
     background-color: rgba(27, 43, 16, 0.979);
     color: rgba(0, 0, 0, 0.993);
+}
+a:hover{
+    text-decoration: underline black;
+    color:rgba(211, 72, 72, 0.781);
+    transition: 0.6s;
+
+}
+Footer{
+    align-items: center;
+    justify-content: center;
+    
 }
