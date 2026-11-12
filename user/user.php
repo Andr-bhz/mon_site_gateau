@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>user_pour_vos_reabonnement_en_ligene</title>
-    <link rel="stylesheet" href="./assets/page.css">
+    <link rel="stylesheet" href="./page.css">
 </head>
 <header><h1>Bienvenue sur mon site pour se reabonnement en ligne</h1></header>
 
