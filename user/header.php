@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php $title="MON_SITE";
-                 if($title <> $HTTP_RAW_POST_DATA){
+                 
                     echo $title;
-                 }
     ?></title>
 </head>
+
 <body>
     
 </body>

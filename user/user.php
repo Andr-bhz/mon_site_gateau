@@ -78,6 +78,7 @@ $nom_ville = htmlspecialchars($user['ville']);
     note.addEventListener('click',  () => {
         document.body.classList.toggle('dark-mode');
     })
+    
     </script>
    
     </body>
