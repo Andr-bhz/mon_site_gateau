@@ -1,5 +1,7 @@
 #include <iostream>
 
 int appel() {
-    cout << "Hello word"
+    cout << "Good morning";
+    cout << "How are you?" 
+    return 0;
 }
