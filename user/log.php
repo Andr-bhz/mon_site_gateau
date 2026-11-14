@@ -5,6 +5,7 @@
     // $detail=trim($_POST['name'] && $_POST['email']);
     //         echo $detail;
     $nom =strtoupper('name');
+    Function add(){}
 ?>
 
 <!DOCTYPE html>

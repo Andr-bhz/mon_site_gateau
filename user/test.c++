@@ -1,10 +1,9 @@
 #include <iostream>
 
-int appel() {
-    cout << "Good morning";
-    cout << "How are you?";
+int main(){
+    int lenght = 30;
+    int width =10;
+    int surF = lenght * width;
+    cout << surF;
     return 0;
-}
-const led () {
-    
 }
