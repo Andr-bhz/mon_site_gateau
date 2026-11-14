@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php $title="MON_SITE";
-                 
-                    echo $title;
+                  echo $title;
     ?></title>
+    <?php
+    if(!isset($title)){
+        echo $title;
+        }
+        ?>
 </head>
 
 <body>
