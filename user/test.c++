@@ -13,3 +13,4 @@ int main(){
     cout << noir + memoire;
     return 0 ;
 }
+int float 

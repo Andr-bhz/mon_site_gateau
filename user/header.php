@@ -14,6 +14,9 @@
 </head>
 
 <body>
+    <div>
+        <input type="week" name="week" id="week" placeholder="Entrer le week">
+    </div>
     
 </body>
 </html>
