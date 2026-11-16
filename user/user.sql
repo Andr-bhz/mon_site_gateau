@@ -1,3 +1,4 @@
 -- $connect-> query("SELECT * FROM users WHERE id = $user_id'");
 -- $name -> fetch_assoc();
 -- $or=$name['name'];
+

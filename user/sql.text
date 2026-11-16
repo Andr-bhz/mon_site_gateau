@@ -1,0 +1,16 @@
+SELECT CustumerName , city ;
+FROM customers;
+SELECT DISTINCT  column1,column2
+FROM table_name;
+
+#include <iostream>
+
+int main (){
+
+int led = 1;
+cout << led 
+return 0;
+
+}
+SELECT NOM_DE_CLIENT , ville
+FROM NOM_DE_CLIENT;
