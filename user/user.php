@@ -12,7 +12,7 @@ $nom_ville = htmlspecialchars($user['ville']);
     <title>user_pour_vos_reabonnement_en_ligene</title>
     <link rel="stylesheet" href="./page.css">
 </head>
-<header><h1>Bienvenue sur mon site pour se reabonnement en ligne</h1></header>
+<header><h1>Bienvenue sur  <span class="site">mon site</span> pour se <span class="ligne"> reabonnement en ligne</span></h1></header>
 <body>
     <a href="https://"></a>
    <!-- <table>
