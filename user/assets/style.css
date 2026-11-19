@@ -4,19 +4,25 @@
     box-sizing: border-box;
 }
 body {
+
     justify-content: center;
     align-items: center;
     direction:center;
     transition:  0.3s ease, color 0.3s ease;
     background-color: rgba(243, 239, 239, 0.979);
     color: rgba(0, 0, 0, 0.993);
-
+      font-size: 15px;
 }
 body.dark-mode{
     background-color: rgba(0, 0, 0, 0.979);
     color:white;
-    size:40rem;
-
+    font-size: 20px;
+}
+body.dark-mode h1{
+Filter:brightness(0.85) contrast(1.08) hue-rotate(15deg);
+}
+header.dark-mode{
+    background-color: rgba(204, 172, 177, 0.815);
 }
 #accueil {
     margin-left: -15px;
@@ -47,9 +53,9 @@ body.dark-mode{
 header {
     position:fixed;
     display: grid;
-    gap: 90px;
+    gap: 150px;
     padding-bottom:30px;
-    background-color: rgba(56, 56, 99, 0.473);
+    background-color: rgba(0, 0, 0, 0.473);
     align-items: normal;
     justify-content: center;
 }
@@ -75,9 +81,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 100px;
-    /* color:rgb(143, 148, 163); */
-    font-size: 60px;
+    line-height: 70px;
+    font-size: 35px;
 }
 img {
     max-height: 3000px;
@@ -105,7 +110,7 @@ input:focus{
     background-color:rgba(5, 4, 5, 0.897);
     box-shadow: 2px 3px 3px 3px; 
 }
-button:hover{
+.send:hover{
     background-color: brown;
     box-shadow:2px 3px 3px 3px ;
     transition: 0.5s;
@@ -122,8 +127,8 @@ Footer{
     justify-content: center;
     align-items: center;
     width: auto;
-    font-size: larger;
-    background-color:rgba(83, 24, 2, 0.836);
+    font-size: 20px;
+    background-color:rgba(179, 145, 131, 0.836);
     margin-top: 30px;
 }
 Footer.dark-mode{
@@ -168,20 +173,11 @@ input:hover{
     border-radius: 5px;
 }
 .btn{
-    position:absolute;
     display: Flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 80%;
-    /* margin-top: 20px; */
-    width: 100px;
-    height: 30px;
-    border-radius: 5px;
-    border-radius: 20px;
-    background-color: rgb(219, 216, 216);
-
+    border-radius:40px ;
 }
 #btn{
+    /* margin-left: 40px; */
     align-items: center;
     justify-content: center;
   

@@ -2,10 +2,7 @@
     // json_encode($_POST['email']);
     $i = null;
     $age = date('Y');
-    // $detail=trim($_POST['name'] && $_POST['email']);
-    //         echo $detail;
-    $nom =strtoupper('name');
-    Function add(){}
+
 ?>
 
 <!DOCTYPE html>
@@ -14,16 +11,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?= $title?>
+        <?= mon_site_gateau?>
     </title>
-    <link rel="stylesheet" href="./style.css">    
+    <link rel="stylesheet" href="./assets/style.css">    
 </head>
-<button id="btn" class="btn">changer de mode</button>
+
 <header>
     <a id="accueil" href="#Accueil">Accueil</a>
     <a id="historique" href="#Historique">Historique</a>
     <a id ="contact" href="#Formulaire">Contact</a>
-    <a id="mode" href="#btn">Change Mode</a>
+    <button id="btn" class="btn">🌙 / ☀️</button>
 </header>
 <body>
     
@@ -45,7 +42,7 @@ et de Fermeture veuillez consulter sur la barre suivante <br>
             <input type="text" name="email" id="email" placeholder="Entrer votre email" required>
     </div>
         <input type="checkbox" name="box" id="box" required class="box">
-        <button type="submit">Envoyer</button>
+        <button type="submit" class="send">Envoyer</button>
 </form>
 <select name="ouvert" id="ouvert">
     <option value="1">

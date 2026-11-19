@@ -33,6 +33,7 @@ $nom_ville = htmlspecialchars($user['ville']);
             <?php endforeach; ?>
         </tbody>
     </table> -->
+     <button id="note" class="ntb">🌙 / ☀️</button>
     <div class="hero">
         <h2>Abonnement 1 mois</h2>
 <section class="mind" id="mind">
@@ -52,7 +53,7 @@ $nom_ville = htmlspecialchars($user['ville']);
     alors mon site se presetente comme suite veuillez inserer toutes vos donnez  
 </p>
     <button class="" ="button"onclick =' document.getElementById("readme").innerHTML = "merci"'>Valider</button>
-    <button id="note" class="ntb">Changer de mode</button>
+   
     <script src="">
         // let text1='Bienvenue sur mon site';
         // text1+= 'pour se reabonnement en ligne'
