@@ -20,7 +20,7 @@
 <header>
     <a id="accueil" href="#Accueil">Accueil</a>
     <a id="historique" href="#Historique">Historique</a>
-    <a id ="contact" href="#Formulaire">Contact</a>
+    <a id ="contact" href="#dash">Contact</a>
     <button id="btn" class="btn">🌙/☀️</button>
 </header>
 <body>

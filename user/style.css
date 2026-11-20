@@ -227,8 +227,7 @@ input:hover{
 #mode:hover{
     color:red;
     text-decoration: underline rgb(8, 10, 10) ;
-    transition: 0.7s;
-    
+    transition: 0.7s; 
 }
 #loader-overlay {
   position: fixed;
@@ -265,13 +264,21 @@ input:hover{
     pointer-events: none;
 }
 .dash{
+    border-radius: 20px;
     text-decoration: none;
     display: flex;
+    margin-left: 60px;
     padding: 10px;
     margin-left: 500px;
 }
+.dash:hover{
+    transition: 0.5s;
+    background-color: rgb(80, 155, 80);
+    cursor: pointer;
+    
+}
 a{
-
+    
     text-decoration: none;
 }
 /* .image-wrapper {
