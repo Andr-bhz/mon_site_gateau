@@ -101,12 +101,12 @@ Footer{
     align-items: center;
     width: auto;
     font-size: 20px;
-    background-color:rgba(179, 145, 131, 0.836);
+    background-color:rgba(199, 113, 106, 0.836);
     margin-top: 30px;
 }
 Footer.dark-mode{
     background-color: white;
-    color:black
+    color:black;
 }
 
 .btn-toggle{
@@ -259,8 +259,40 @@ input:hover{
 
 /* État caché une fois la page chargée */
 #loader-overlay.hidden {
-transition: 1.2s;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+    transition: 1.2s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
+.dash{
+    text-decoration: none;
+    display: flex;
+    padding: 10px;
+    margin-left: 500px;
+}
+a{
+
+    text-decoration: none;
+}
+/* .image-wrapper {
+    
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.fade-in-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+
+.fade-in-image.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+} */

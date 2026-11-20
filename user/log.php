@@ -40,7 +40,7 @@
     <div id="zoneDonnees" class="donnees-box">
     </div>
         <strong><h1 id="Accueil" >Welcome in my web<span>Site</span> </h1></strong>
-    <img src="./images/gateau.jpg" alt="" height=800 width =900>
+    <img src="./images/gateau.jpg" alt="Description de l'image" height=800 width =900 id="mon-image" class="fade-in-image">
     <p>Bienvenue sur mon site qui nous informe sur differents 
 types de parfum que vous aimez <br id="Historique"> plus d'informations veuillez nous contactez sur notre site
 <br>pour tout savoir sur notre programme d'ouverture
@@ -65,8 +65,8 @@ et de Fermeture veuillez consulter sur la barre suivante <br>
     </option>
       <?php endfor?>
 </select> 
-            <div class="dash" id="dash">
-                <a href="dashboard.php" id="">Sign_In</a>
+            <div>
+                <a href="dashboard.php" id=""><button  class="dash" id="dash">Sign_In</button></a>
              </div>
 <script> 
 //     if (new Date().getHours() < 18) {
