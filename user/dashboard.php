@@ -1,3 +1,13 @@
+<?php
+$nom =trim($_POST['name']);
+$email=trim($_POST['email']);
+
+if('REQUEST_METHOD' == 'POST') {
+    echo $nom && $email;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
