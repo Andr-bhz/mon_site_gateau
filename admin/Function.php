@@ -2,7 +2,7 @@
 // include_once 'header.php';
 require 'log.php';
 
-function aFFicher($title,$titre,$error){
+Function add($title,$titre,$error){
 if ($tile <> $titre ) {
     echo "bienvenue";
 }

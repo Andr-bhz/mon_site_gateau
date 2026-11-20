@@ -3,6 +3,6 @@
 // require './mon_site/admin/footer.php';
 require 'log.php';
 // require 'user.sql';
-require 'Admin.sql';
+// require 'Admin.sql';
 ?>
 

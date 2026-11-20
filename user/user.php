@@ -10,7 +10,7 @@ $nom_ville = htmlspecialchars($user['ville']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>user_pour_vos_reabonnement_en_ligene</title>
-    <link rel="stylesheet" href="./assets/page.css">
+    <link rel="stylesheet" href="./page.css">
 </head>
 <header><h1>Bienvenue sur  <span class="site">mon site</span> pour se <span class="ligne"> reabonnement en ligne</span></h1></header>
 <body>

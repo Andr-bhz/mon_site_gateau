@@ -4,25 +4,25 @@
     box-sizing: border-box;
 }
 body {
-
     justify-content: center;
     align-items: center;
     direction:center;
-    transition:  0.3s ease, color 0.3s ease;
-    background-color: rgba(243, 239, 239, 0.979);
+    transition:  0.7s ease, color 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.829);
     color: rgba(0, 0, 0, 0.993);
-      font-size: 15px;
+    font-size: 15px;
 }
 body.dark-mode{
-    background-color: rgba(0, 0, 0, 0.979);
+    transition: 0.7s ease,color 0.5s ease;
+    background-color: rgb(0, 0, 0);
     color:white;
-    font-size: 20px;
+    font-size: 16px;
 }
 body.dark-mode h1{
-Filter:brightness(0.85) contrast(1.08) hue-rotate(15deg);
+    color:rgb(85, 146, 79);
 }
-header.dark-mode{
-    background-color: rgba(204, 172, 177, 0.815);
+body.dark-mode header{
+    background-color: rgba(153, 153, 153, 0.137);
 }
 #accueil {
     margin-left: -15px;
@@ -90,39 +90,12 @@ img {
     border-radius: 100px;
 
 }
-.group-Form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color:rgb(158, 104, 113);
-    margin: 190px;
-    border-radius: 30px;
-    padding:60px;
-    color:rgb(5, 4, 4);
-    font-size: 25px;
-    height: 300px;
-    width: 400px;
-}
-input:focus{
-    transition: 0.7s;
-    transform: translate(3px);
-    background-color:rgba(5, 4, 5, 0.897);
-    box-shadow: 2px 3px 3px 3px; 
-}
 .send:hover{
     background-color: brown;
     box-shadow:2px 3px 3px 3px ;
     transition: 0.5s;
 }
-button{
-    /* margin-bottom: 30px;
-    margin-left: 200px; */
-    justify-content: center;
-    align-items: center;
-    /* flex-direction: column; */
 
-}
 Footer{
     justify-content: center;
     align-items: center;
@@ -135,14 +108,51 @@ Footer.dark-mode{
     background-color: white;
     color:black
 }
-input{
-    margin-left: 40px;
-    padding-left: 80px;
-    height: 15px;
-    color:white;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 10px;
+
+.btn-toggle{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:36px;
+    height:28px;
+    padding:4px;
+    background: transparent;
+    border:1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn-toggle{
+    display: flex;
+    width: 30%;
+    height: 3px;
+    background-color: #222;
+    border-radius: 2px;
+    transition: transForm 0.6s ease,opacity 0.6s ease;
+}
+body.dark-mode .btn-toggle{
+    background-color: rgb(158, 104, 113);
+}
+.btn-toggle.is-active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+/* .btn-toggle.is-active span:nth-child(2) {
+      opacity: 0;
+    } */
+/* .btn-toggle.is-active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    } */
+/* .donnees-box{
+    margin-top: 16px;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+} */
+/* .donnees-box.est-cache {
+      display: none;
+    } */
+.btn:hover{
+    background-color: rgb(8, 5, 5);
 }
 h1{
     display: flex;
@@ -173,21 +183,18 @@ input:hover{
     border-radius: 5px;
 }
 .btn{
+    cursor: pointer;
     display: Flex;
     border-radius:40px ;
 }
-#btn{
-    /* margin-left: 40px; */
-    align-items: center;
-    justify-content: center;
-  
-}
+
 #whats{
     color:white;
     align-items: center;
     size: 20rem;
     text-decoration: none;
 }
+
 #git{
     text-decoration: none;
     color:white;
@@ -222,4 +229,38 @@ input:hover{
     text-decoration: underline rgb(8, 10, 10) ;
     transition: 0.7s;
     
+}
+#loader-overlay {
+  position: fixed;
+  inset: 0; /* top, right, bottom, left à 0 */
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+
+/* Cercle qui tourne */
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #e5e7eb;      /* Couleur du cercle de fond */
+  border-top-color: #3b82f6;   /* Couleur de la partie active qui tourne */
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* État caché une fois la page chargée */
+#loader-overlay.hidden {
+    transition: 0.8s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
