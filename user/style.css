@@ -124,9 +124,9 @@ Footer.dark-mode{
 .btn-toggle{
     display: flex;
     width: 30%;
-    height: 3px;
-    background-color: #222;
-    border-radius: 2px;
+    height: 30px;
+    background-color: #f0eeee;
+    border-radius: 10px;
     transition: transForm 0.6s ease,opacity 0.6s ease;
 }
 body.dark-mode .btn-toggle{
@@ -245,8 +245,8 @@ input:hover{
 .spinner {
   width: 48px;
   height: 48px;
-  border: 5px solid #e5e7eb;      /* Couleur du cercle de fond */
-  border-top-color: #3b82f6;   /* Couleur de la partie active qui tourne */
+  border: 5px solid #dad4d4e3;      /* Couleur du cercle de fond */
+  border-top-color: rgb(192, 150, 150);   /* Couleur de la partie active qui tourne */
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
@@ -259,7 +259,7 @@ input:hover{
 
 /* État caché une fois la page chargée */
 #loader-overlay.hidden {
-    transition: 0.8s;
+transition: 1.2s;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
