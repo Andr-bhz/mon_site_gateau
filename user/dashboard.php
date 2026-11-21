@@ -29,6 +29,15 @@ if('REQUEST_METHOD' == 'POST') {
         <input type="checkbox" name="box" id="box" class="box">
         <button type="submit" class="send">Envoyer</button>
 </form>
+<div id="loader-overlay">
+    <div class="spinners"></div>
+  </div>
+
+  <!-- Contenu principal de ta page -->
+  <main id="contenu-page">
+    <h1>Bienvenue sur mon site</h1>
+    <p>Le contenu s'affiche une fois le chargement terminé.</p>
+  </main>
 <script>
     const bbtn = document.getElementById('bbtn');
     bbtn.addEventListener('click',() => {
@@ -38,10 +47,10 @@ if('REQUEST_METHOD' == 'POST') {
     // btn.addEventListener('click',() => {
     //     document.body.classList.toggle('dark-mode');
     // })
-    function cacherLoader() {
-  const loader = document.getElementById("loader-overlay");
-  if (loader) {
-    loader.classList.add("hidden");
+    function cacherLoaders() {
+  const loaders = document.getElementById("loader-overlay");
+  if (loaders) {
+    loaders.classList.add("hidden");
   }
 }
 
@@ -51,7 +60,7 @@ window.addEventListener("load", cacherLoader);
 // Sécurité : si la page est restaurée depuis le cache du navigateur (bouton Précédent)
 window.addEventListener("pageshow", (event) => {
   if (event.persisted) {
-    cacherLoader();
+    cacherLoaders();
   }
 });
 </script>

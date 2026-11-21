@@ -89,7 +89,7 @@ input:focus{
 }
 
 /* Cercle qui tourne */
-.spinner {
+.spinners {
   width: 48px;
   height: 48px;
   border: 5px solid #dad4d4e3;      /* Couleur du cercle de fond */
