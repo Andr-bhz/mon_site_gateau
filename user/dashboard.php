@@ -38,6 +38,22 @@ if('REQUEST_METHOD' == 'POST') {
     // btn.addEventListener('click',() => {
     //     document.body.classList.toggle('dark-mode');
     // })
+    function cacherLoader() {
+  const loader = document.getElementById("loader-overlay");
+  if (loader) {
+    loader.classList.add("hidden");
+  }
+}
+
+// Se déclenche quand toute la page (HTML, CSS, images) est chargée
+window.addEventListener("load", cacherLoader);
+
+// Sécurité : si la page est restaurée depuis le cache du navigateur (bouton Précédent)
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) {
+    cacherLoader();
+  }
+});
 </script>
 </body>
 </html>
