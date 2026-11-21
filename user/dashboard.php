@@ -1,6 +1,6 @@
 <?php
-$nom =trim($_POST['name']);
-$email=trim($_POST['email']);
+@$nom =($_POST['name']);
+@$email=($_POST['email']);
 
 if('REQUEST_METHOD' == 'POST') {
     echo $nom && $email;
