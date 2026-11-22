@@ -31,6 +31,9 @@ body.dark-mode{
     transition: 0.3s;
     background: rgb(0, 0, 0);
 }
+.group-Form.animation{
+    border:blue;
+}
 .group-Form{
     display: flex;
     flex-direction: column;
@@ -76,4 +79,14 @@ input:focus{
     transform: translate(3px);
     background-color:rgba(5, 4, 5, 0.897);
     box-shadow: 2px 3px 3px 3px; 
+}
+.form-card {
+    position: relative;
+    width: 350px; /* Ajuste selon ta largeur actuelle */
+    padding: 3px; /* Épaisseur de la bordure lumineuse */
+    border-radius: 20px; /* Arrondi des coins */
+    overflow: hidden; /* Cache ce qui dépasse de la bordure */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
