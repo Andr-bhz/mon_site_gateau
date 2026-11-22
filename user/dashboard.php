@@ -17,6 +17,7 @@ if('REQUEST_METHOD' == 'POST') {
     <link rel="stylesheet" href="./assets/dash.css">
 </head>
 <body>
+  <div class="Form-card">
 <form action="user.php " method="POST" class="group-Form" id="Formulaire" >
     <div>
         <label for="">Nom:</label> <button class="bbtn" id="bbtn">🌑/☀️</button>
@@ -29,9 +30,7 @@ if('REQUEST_METHOD' == 'POST') {
         <input type="checkbox" name="box" id="box" class="box">
         <button type="submit" class="send">Envoyer</button>
 </form>
-<div id="loader-overlay">
-    <div class="spinners"></div>
-  </div>
+</div>
 <script>
     const bbtn = document.getElementById('bbtn');
     bbtn.addEventListener('click',() => {
