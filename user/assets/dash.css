@@ -80,7 +80,8 @@ input:focus{
     background-color:rgba(5, 4, 5, 0.897);
     box-shadow: 2px 3px 3px 3px; 
 }
-.Form-card {
+/* Le conteneur principal qui porte la lumière */
+.form-card {
     position: relative;
     width: 350px; /* Ajuste selon ta largeur actuelle */
     padding: 3px; /* Épaisseur de la bordure lumineuse */
@@ -90,6 +91,8 @@ input:focus{
     justify-content: center;
     align-items: center;
 }
+
+/* Le faisceau lumineux qui tourne */
 .form-card::before {
     content: "";
     position: absolute;
@@ -99,12 +102,14 @@ input:focus{
     background: conic-gradient(
         transparent 0deg,
         transparent 270deg,
-        #583baf 310deg,   /* Violet */
+        #7f5af0 310deg,   /* Violet */
         #ffffff 340deg,   /* Point le plus brillant */
-        #130e07 360deg    /* Touche dorée */
+        #f59e0b 360deg    /* Touche dorée */
     );
-    animation: rotateLight 2s linear infinite;
+    animation: rotateLight 4s linear infinite;
 }
+
+/* L'intérieur de la carte (le fond sombre du formulaire) */
 .form-card form {
     position: relative;
     z-index: 1; /* Passe au-dessus de la lumière pour ne laisser voir que le bord */
@@ -114,9 +119,11 @@ input:focus{
     border-radius: 17px; /* Légèrement plus petit que .form-card (20px - 3px) */
     padding: 30px;
 }
+
+/* L'animation de rotation */
 @keyframes rotateLight {
     0% {
-        transform: rotate(120deg);
+        transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
