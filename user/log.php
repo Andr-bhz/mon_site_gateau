@@ -66,7 +66,7 @@ et de Fermeture veuillez consulter sur la barre suivante <br>
       <?php endfor?>
 </select> 
             <div>
-                <a href="dashboard.php" id=""><button  class="dash" id="dash">Sign_In</button></a>
+                <a href="./dashboard.php" id=""><button  class="dash" id="dash">Sign_In</button></a>
              </div>
 <script> 
 //     if (new Date().getHours() < 18) {

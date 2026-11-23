@@ -21,8 +21,15 @@ body.dark-mode{
 body.dark-mode h1{
     color:rgb(85, 146, 79);
 }
-body.dark-mode header{
-    background-color: rgba(153, 153, 153, 0.137);
+body.dark-mode .dash{
+    background-color: white;
+    box-shadow: 1px 6px 4px 2px green;
+}
+body.dark-mode .dash:hover{
+    background-color: rgb(216, 128, 143);
+}
+body.dark-mode .btn{
+   background-color: #000000;
 }
 #accueil {
     margin-left: -15px;
@@ -264,14 +271,17 @@ input:hover{
     pointer-events: none;
 }
 .dash{
+    border: solid black;
+    box-shadow:1px 6px 4px 2px black;
     background-color: rgb(184, 109, 121);
     border-radius: 20px;
     text-decoration: none;
-    display: flex;
-    margin-left: 60px;
+    display: grid;
+    margin-left: 400px;
     padding: 10px;
     margin-left: 500px;
 }
+
 .dash:hover{
     transition: 0.5s;
     background-color: rgb(80, 155, 80);

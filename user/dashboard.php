@@ -3,7 +3,9 @@
 @$email=($_POST['email']);
 
 if('REQUEST_METHOD' == 'POST') {
-    echo $nom && $email;
+    if (!empty($nom && $email)) {
+
+    }
 }
 
 ?>
@@ -18,8 +20,9 @@ if('REQUEST_METHOD' == 'POST') {
 </head>
 <body>
   <div class="carte-login">
-<form action="user.php " method="POST" class="group-Form" id="Formulaire" >
-    <div>
+<form action="user.php " method="POST" class="group-Form" id="Formulaire" <?php htmlspecialchars('group-Form');?>>
+   <script>alert("bienvenue veuillez completer l'aFFiche SVP")
+   <div>
         <label for="">Nom:</label> <button class="bbtn" id="bbtn">🌑/☀️</button>
         <input type="text" name="name" id="name" placeholder="Entrer votre nom" required>
     </div>
@@ -29,7 +32,8 @@ if('REQUEST_METHOD' == 'POST') {
     </div>
         <input type="checkbox" name="box" id="box" class="box">
         <button type="submit" class="send">Envoyer</button>
-</form>
+</script>
+   </form>
 </div>
 <script>
     const bbtn = document.getElementById('bbtn');
