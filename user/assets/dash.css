@@ -15,8 +15,11 @@ body{
 }
 body.dark-mode{
     transition: 0.9s ease;
-    background: linear-gradient(135deg,rgb(21, 21, 46),rgb(78, 72, 72)) ;
+    background: linear-gradient(135deg,rgb(13, 13, 43),rgb(131, 130, 126)) ;
     color:white;
+}
+body.dark-mode label{
+    color:rgb(255, 255, 255);
 }
 /* body.dark-mode .send{
     
@@ -28,13 +31,11 @@ body.dark-mode{
     margin-left: 100px;
 }
 .bbtn:hover{
-    transition: 0.3s;
+    transition: 0.5s;
     background: rgb(0, 0, 0);
+    cursor: pointer;
 }
-.group-Form.animation{
-    border:blue;
-}
-.group-Form{
+/* .group-Form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +49,7 @@ body.dark-mode{
     font-size: 25px;
     height: 300px;
     width: 400px;
-}
+} */
 input{
     margin-left: 40px;
     padding-left: 80px;
@@ -69,6 +70,7 @@ button{
 
 }
 .send:hover{
+    cursor: pointer;
     background-color: rgb(50, 50, 126);
     transition: 0.6s;
     transform:20px;
@@ -81,3 +83,44 @@ input:focus{
     box-shadow: 2px 3px 3px 3px; 
 }
 
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+.group-Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:solid rgba(0, 0, 0, 0.637);
+    background-color:#7c7a7b15;
+    margin: 190px;
+    border-radius: 30px;
+    padding:60px;
+    color:rgb(5, 4, 4);
+    font-size: 25px;
+    height: 300px;
+    width: 400px;
+    border-radius: 25px;
+    border: 4px solid transparent;
+    background: 
+    linear-gradient(#2c2a32, #2c2a32) padding-box,
+    conic-gradient(
+      from var(--angle),
+      transparent 75%,
+      rgba(18, 56, 139, 0.664) 85%,
+      #f8f8f8 95%,
+      #8f784e 100%
+    ) border-box;
+    
+  animation: tournerLumiere 4s linear infinite;
+}
+
+@keyframes tournerLumiere {
+  to {
+    --angle: 360deg;
+  }
+}

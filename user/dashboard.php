@@ -14,10 +14,10 @@ if('REQUEST_METHOD' == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="./dash.css">
+    <link rel="stylesheet" href="./assets/dash.css">
 </head>
 <body>
-  <div class="Form-card">
+  <div class="carte-login">
 <form action="user.php " method="POST" class="group-Form" id="Formulaire" >
     <div>
         <label for="">Nom:</label> <button class="bbtn" id="bbtn">🌑/☀️</button>
