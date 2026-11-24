@@ -1,10 +1,20 @@
 <?php
-@$nom =($_POST['name']);
-@$email=($_POST['email']);
+@$nom =trim($_POST['name']);
+@$email=trim($_POST['email']);
 
-if('REQUEST_METHOD' == 'POST') {
-    if (!empty($nom && $email)) {
 
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (empty($nom )) {
+    echo "votre nom est remmplis";
+    }
+    else {
+      
+    }
+    if (empty($email )) {
+    echo "votre email est remmplis";
+    }
+    else {
+        echo "veuillez remplir votre email";
     }
 }
 
@@ -21,10 +31,9 @@ if('REQUEST_METHOD' == 'POST') {
 <body>
   <div class="carte-login">
 <form action="user.php " method="POST" class="group-Form" id="Formulaire" <?php htmlspecialchars('group-Form');?>>
-   <script>alert("bienvenue veuillez completer l'aFFiche SVP")
    <div>
         <label for="">Nom:</label> <button class="bbtn" id="bbtn">🌑/☀️</button>
-        <input type="text" name="name" id="name" placeholder="Entrer votre nom" required>
+        <input type="text" name="name" id="name" placeholder="Entrer votre nom" require <?php   echo "veuillez remplir votre nom";?>>
     </div>
     <div>
             <label for="">Email:</label>
@@ -32,8 +41,9 @@ if('REQUEST_METHOD' == 'POST') {
     </div>
         <input type="checkbox" name="box" id="box" class="box">
         <button type="submit" class="send">Envoyer</button>
-</script>
-   </form>
+
+  
+</form>
 </div>
 <script>
     const bbtn = document.getElementById('bbtn');
