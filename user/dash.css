@@ -118,11 +118,11 @@ input:focus{
     border-radius: 25px;
     border: 5px solid transparent ;
     background: 
-    linear-gradient(#1b1717, #555041) padding-box,
+    linear-gradient(#383030, #41557c) padding-box,
     conic-gradient(
       from var(--angle),
       transparent 85%,
-      rgba(18, 56, 139, 0.664) 85%,
+      rgba(18, 56, 139, 0.938) 85%,
       #f8f8f8 95%,
       #8f784e 100%
     ) border-box;
