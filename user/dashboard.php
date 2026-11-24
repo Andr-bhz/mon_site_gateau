@@ -1,22 +1,23 @@
 <?php
-@$nom =trim($_POST['name']);
-@$email=trim($_POST['email']);
+session_start();
+$nom =($_POST['name']);
+$email=($_POST['email']);
 
 
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if (empty($nom )) {
-    echo "votre nom est remmplis";
-    }
-    else {
+// if($_SERVER['REQUEST_METHOD'] == 'POST') {
+//     if (empty($nom )) {
+//     echo "votre nom est remmplis";
+//     }
+//     else {
       
-    }
-    if (empty($email )) {
-    echo "votre email est remmplis";
-    }
-    else {
-        echo "veuillez remplir votre email";
-    }
-}
+//     }
+//     if (empty($email )) {
+//     echo "votre email est remmplis";
+//     }
+//     else {
+//         echo "veuillez remplir votre email";
+//     }
+// }
 
 ?>
 
@@ -54,6 +55,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     // btn.addEventListener('click',() => {
     //     document.body.classList.toggle('dark-mode');
     // })
+    if(bbtn ,'click',() => {
+         alert('bienvenue');
+    }) {
+     
+    }
 </script>
 </body>
 </html>
