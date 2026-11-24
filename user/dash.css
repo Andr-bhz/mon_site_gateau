@@ -68,8 +68,10 @@ input{
     border-radius: 10px;
 }
 input:hover{
-    transition: 0.8s;
-    border: solid rgb(50, 50, 126);
+    color:white;
+    background-color: rgb(12, 9, 4);
+    transition: 0.4s;
+    border: solid rgb(29, 29, 129);
 }
 button{
     justify-content: center;
@@ -85,6 +87,7 @@ button{
     box-shadow:2px 3px 3px 3px black ;
 }
 input:focus{
+    font-size: 15px;
     transition: 0.7s;
     transform: translate(3px);
     background-color:rgba(5, 4, 5, 0.897);
@@ -103,7 +106,7 @@ input:focus{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border:solid rgba(0, 0, 0, 0.637);
+    border:solid rgba(90, 14, 14, 0.637);
     background-color:#7c7a7b15;
     margin: 190px;
     border-radius: 30px;
@@ -113,12 +116,12 @@ input:focus{
     height: 300px;
     width: 400px;
     border-radius: 25px;
-    border: 4px solid transparent;
+    border: 5px solid transparent ;
     background: 
-    linear-gradient(#2c2a32, #2c2a32) padding-box,
+    linear-gradient(#1b1717, #555041) padding-box,
     conic-gradient(
       from var(--angle),
-      transparent 75%,
+      transparent 85%,
       rgba(18, 56, 139, 0.664) 85%,
       #f8f8f8 95%,
       #8f784e 100%
