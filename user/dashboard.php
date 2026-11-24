@@ -1,24 +1,15 @@
 <?php
 session_start();
-$nom =($_POST['name']);
-$email=($_POST['email']);
+$admin =$_SESSION['vue_admin'];
+$nom =htmlspecialchars($_POST['name']);
+$email=htmlspecialchars($_POST['email']);
 
 
-// if($_SERVER['REQUEST_METHOD'] == 'POST') {
-//     if (empty($nom )) {
-//     echo "votre nom est remmplis";
-//     }
-//     else {
-      
-//     }
-//     if (empty($email )) {
-//     echo "votre email est remmplis";
-//     }
-//     else {
-//         echo "veuillez remplir votre email";
-//     }
-// }
-
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+     if(empty($nom) || empty($email)) {
+        echo "tous les champs soint vide ";
+     }
+}
 ?>
 
 <!DOCTYPE html>
@@ -31,19 +22,17 @@ $email=($_POST['email']);
 </head>
 <body>
   <div class="carte-login">
-<form action="user.php " method="POST" class="group-Form" id="Formulaire" <?php htmlspecialchars('group-Form');?>>
+<form action="user.php " method="POST" class="group-Form" id="Formulaire" >
    <div>
         <label for="">Nom:</label> <button class="bbtn" id="bbtn">🌑/☀️</button>
-        <input type="text" name="name" id="name" placeholder="Entrer votre nom" require <?php   echo "veuillez remplir votre nom";?>>
+        <input type="text" name="name" id="name" placeholder="Entrer votre nom" required >
     </div>
     <div>
             <label for="">Email:</label>
             <input type="text" name="email" id="email" placeholder="Entrer votre email" required>
     </div>
         <input type="checkbox" name="box" id="box" class="box">
-        <button type="submit" class="send">Envoyer</button>
-
-  
+        <button type="submit" class="send">Envoyer</button>  
 </form>
 </div>
 <script>
@@ -51,10 +40,6 @@ $email=($_POST['email']);
     bbtn.addEventListener('click',() => {
         document.body.classList.toggle('dark-mode');
     })
-    // const btn=document.getElementById('btn')
-    // btn.addEventListener('click',() => {
-    //     document.body.classList.toggle('dark-mode');
-    // })
     if(bbtn ,'click',() => {
          alert('bienvenue');
     }) {
