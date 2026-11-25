@@ -16,7 +16,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo  "la case de l'email est vide " . " <br>";
         echo "veuiller remplir l'email";
     }
-        
+    else{
+        $email = test_input($_POST['email']);    }
 }
 ?>
 
