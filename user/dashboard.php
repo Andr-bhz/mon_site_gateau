@@ -35,11 +35,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
    <div>
         <label for="">Nom:</label> <button class="bbtn" id="bbtn">🌑/☀️</button>
         <input type="text" name="name" id="name" placeholder="Entrer votre nom" required >
-        <span> <?= @$error_nom ; ?></span>
+        <span class="error.name"> <?= @$error_nom ; ?></span>
     </div>
     <div>
-            <label for="">Email:</label>
-            <input type="text" name="email" id="email" placeholder="Entrer votre email" required>
+        <label for="">Email:</label>
+        <input type="text" name="email" id="email" placeholder="Entrer votre email" required>
+        <span class="error.email"><?= ?></span>
     </div>
         <input type="checkbox" name="box" id="box" class="box">
         <button type="submit" class="send">Envoyer</button>  
