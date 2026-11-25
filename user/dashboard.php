@@ -13,7 +13,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $nom = test_input($_POST['name']);
     }
     if(empty($email)){
-        echo  "la case de l'email est vide  . <br>";
+        echo  "la case de l'email est vide " . " <br>";
+        echo "veuiller remplir l'email";
     }
         
 }
