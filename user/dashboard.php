@@ -21,7 +21,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="./dash.css">
 </head>
 <body>
-  <div class="carte-login">
+  <div class="login">
 <form action="user.php " method="POST" class="group-Form" id="Formulaire" >
    <div>
         <label for="">Nom:</label> <button class="bbtn" id="bbtn">🌑/☀️</button>
