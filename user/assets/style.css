@@ -104,15 +104,18 @@ img {
 }
 
 Footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    width: auto;
-    font-size: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 15px;
     background-color:rgba(199, 113, 106, 0.836);
-    margin-top: 30px;
 }
-Footer.dark-mode{
-    background-color: white;
+body.dark-mode Footer{
+    background-color: rgb(84, 158, 90);
     color:black;
 }
 
