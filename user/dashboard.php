@@ -35,6 +35,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
    <div>
         <label for="">Nom:</label> <button class="bbtn" id="bbtn">🌑/☀️</button>
         <input type="text" name="name" id="name" placeholder="Entrer votre nom" required >
+        <span> <?= @$error_nom ; ?></span>
     </div>
     <div>
             <label for="">Email:</label>
