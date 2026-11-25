@@ -7,8 +7,8 @@ session_start();
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(empty($nom)) {
-        echo " la case du nom est vide  . <br>" ;
-        echo "veuiller entrer le nom";
+        $nom =" la case du nom est vide  . <br>" ;
+        $nom = "veuiller entrer le nom";
     }else{
         $nom = test_input($_POST['name']);
     }
