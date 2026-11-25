@@ -6,9 +6,13 @@ session_start();
 
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-     if(empty($nom) || empty($email)) {
-        echo "tous les champs soint vide ";
-     }
+    if(empty($nom)) {
+        echo " la case du nom est vide  . <br>" ;
+        echo "veuiller entrer le nom";
+    }else{
+        $nom = test_input($_POST['name']);
+    }
+        
 }
 ?>
 
