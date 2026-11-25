@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div>
         <label for="">Email:</label>
         <input type="text" name="email" id="email" placeholder="Entrer votre email" required>
-        <span class="error.email"><?= ?></span>
+        <span class="error.email"><?=$error_nom ?></span>
     </div>
         <input type="checkbox" name="box" id="box" class="box">
         <button type="submit" class="send">Envoyer</button>  
