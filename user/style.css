@@ -268,7 +268,7 @@ input:hover{
 
 /* État caché une fois la page chargée */
 #loader-overlay.hidden {
-    transition: 1.2s;
+    transition: 1.6s;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;

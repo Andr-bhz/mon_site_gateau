@@ -15,7 +15,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(empty($email)){
         $email =  "la case de l'email est vide " . " <br>";
         $email ="veuiller remplir l'email";
-    }
+    }  
     else{
         $email = test_input($_POST['email']);    }
 }
@@ -27,7 +27,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="./dash.css">
+    <link rel="stylesheet" href="./assets/dash.css">
 </head>
 <body>
   <div class="login">
@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div>
         <label for="">Email:</label>
         <input type="text" name="email" id="email" placeholder="Entrer votre email" required>
-        <span class="error.email"><?=$error_nom ?></span>
+        <span class="error.email"><?= @$error_nom ?></span>
     </div>
         <input type="checkbox" name="box" id="box" class="box">
         <button type="submit" class="send">Envoyer</button>  
