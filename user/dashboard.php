@@ -19,6 +19,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     else{
         $email = test_input($_POST['email']);    }
 }
+foreach ($user as $key => $value) {
+    'admin' .  'open' ;
+}
 ?>
 
 <!DOCTYPE html>
