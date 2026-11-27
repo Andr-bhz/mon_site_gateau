@@ -4,5 +4,11 @@
 require 'log.php';
 // require 'user.sql';
 // require 'Admin.sql';
+
+session_start();
+
+unset($_SESSION['role']); 
 ?>
+
+
 

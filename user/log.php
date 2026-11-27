@@ -2,7 +2,12 @@
     // json_encode($_POST['email']);
     $i = null;
     $age = date('Y');
+session_start();
 
+$_SESSION['admin'] = [
+    'user' => 'john',
+    'password' => '**'
+] ;
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +21,9 @@
 
     <link rel="stylesheet" href="./style.css">    
 </head>
-
+             <div>
+                <a href="./dashboard.php" id=""><button  class="dash" id="dash">Sign_In</button></a>
+             </div>
 <header>
     <a id="accueil" href="#Accueil">Accueil</a>
     <a id="historique" href="#Historique">Historique</a>
@@ -28,15 +35,7 @@
     id="btn-togggle"
     class="btn-toggle"
     type="button"
-    aria-Label="AFFicher ou masquer les données"
-    aria-expanded="true"
-    aria-controls="zoneDonnees"
-  
-    >☰ 
-    <span class="barre"></span>
-    <span class="barre"></span>
-    <span class="barre"></span>
-</button>
+  >☰ </button>
     <div id="zoneDonnees" class="donnees-box">
     </div>
         <strong><h1 id="Accueil" >Welcome in my web<span>Site</span> </h1></strong>
@@ -65,9 +64,7 @@ et de Fermeture veuillez consulter sur la barre suivante <br>
     </option>
       <?php endfor?>
 </select> 
-            <div>
-                <a href="./dashboard.php" id=""><button  class="dash" id="dash">Sign_In</button></a>
-             </div>
+           
 <script> 
 //     if (new Date().getHours() < 18) {
 //   document.getElementById("demo").innerHTML = "Good day!";
