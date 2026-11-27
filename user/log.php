@@ -8,10 +8,7 @@ $_SESSION['admin'] = [
     'user' => 'john',
     'password' => '***'
 ] ;
-$_COOKIE['name'] == [
-    'user' => 'mireille',
-    'password' => '123'
-];
+
 ?>
 
 <!DOCTYPE html>
