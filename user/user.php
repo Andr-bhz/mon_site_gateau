@@ -4,12 +4,15 @@ $nom = htmlspecialchars($user['nom']);
 $email =htmlspecialchars($user['email']);
 $nom_ville = htmlspecialchars($user['ville']);
 ?> -->
+<?php
+$title = "user_pour_vos_reabonnement_en_ligne";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>user_pour_vos_reabonnement_en_ligene</title>
+    <title><?= $title?></title>
     <link rel="stylesheet" href="./page.css">
 </head>
 <header><h1>Bienvenue sur  <span class="site">mon site</span> pour se <span class="ligne"> reabonnement en ligne</span></h1></header>
@@ -36,7 +39,7 @@ $nom_ville = htmlspecialchars($user['ville']);
      <button id="note" class="ntb">🌙 / ☀️</button>
     <div class="hero">
         <h2>Abonnement 1 mois</h2>
-<section class="mind" id="mind">
+<section class="mind" id="mind" name="mindset">
         <p>price: <span>5$</span><br>En s'abbonant sur notre site <br>proitez de <span>15%</span>  de reduction</p>
     </div>
     <div class="sheld">

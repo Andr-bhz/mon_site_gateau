@@ -6,8 +6,12 @@ session_start();
 
 $_SESSION['admin'] = [
     'user' => 'john',
-    'password' => '****'
+    'password' => '***'
 ] ;
+$_COOKIE['name'] == [
+    'user' => 'mireille',
+    'password' => '123'
+];
 ?>
 
 <!DOCTYPE html>

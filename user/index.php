@@ -5,10 +5,12 @@ require 'log.php';
 // require 'user.sql';
 // require 'Admin.sql';
 
-session_start();
+// session_start();
 
-unset($_SESSION['role']); 
+// unset($_SESSION['mindset']);
+// session_get_cookie_params(
+     
+// )
 ?>
-
 
 
