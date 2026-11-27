@@ -6,7 +6,7 @@ session_start();
 
 $_SESSION['admin'] = [
     'user' => 'john',
-    'password' => '**'
+    'password' => '****'
 ] ;
 ?>
 
